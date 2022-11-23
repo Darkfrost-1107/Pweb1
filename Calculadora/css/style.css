@@ -1,0 +1,17 @@
+form{
+    display: inline-block;
+}
+
+table{
+    position: relative;
+    border: 3px solid black;
+    left: 30%;
+}
+
+th{
+    background-color: brown;
+}
+
+input{
+    display: block;
+}

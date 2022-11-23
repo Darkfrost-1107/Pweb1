@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscadador avanzado</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://www.unsa.edu.pe/wp-content/uploads/2017/12/cropped-LogoUNSAFav-192x192.png" sizes="192x192">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Buscador de Google</a></li>
+            <li><a href="./imagesSearch.html">Imagenes de Google</a></li>
+            <li><a href="#">Buscador avanzado</a></li>
+        </ul>
+        <img id ="icon" src="./Images/UNSA-Icon.png" alt="img unsa" width="140px"  >
+    </nav>
+    <div class="flex-container">
+        <img id = "iconB" src="./Images/UNSA-Icon.png" alt="img unsa" width="600px">
+        <div class="form-container" id="adv">
+            <form action="./cgi-bin/BusquedaAvanzada.pl" method="GET">
+                <table> 
+                    <tr> 
+                        <th>Incluir palabras: </th>  
+                        <th><input type="text" name = "include" autocomplete="off" required> <th>
+                    </tr>
+                    <tr>
+                        <th>Incluir palabra o frase exacta: </th>
+                        <th><input type="text" name = "exact" autocomplete="off"><th>
+                    </tr>
+                    <tr>
+                        <th>Excluir palabras: </th>
+                        <th><input type="text" name = "exclude" autocomplete="off"><th>
+                    </tr>
+                </table>
+                <input type="submit" value = "Búsqueda en Google">
+    
+            </form>
+
+        </div>  
+    </div>
+</body>
+</html>

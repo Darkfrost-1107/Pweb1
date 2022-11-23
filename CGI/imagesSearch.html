@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Imagenes UNSA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://www.unsa.edu.pe/wp-content/uploads/2017/12/cropped-LogoUNSAFav-192x192.png" sizes="192x192">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Buscador de Google</a></li>
+            <li><a href="#">Imagenes de Google</a></li>
+            <li><a href="./advancedSearch.html">Buscador avanzado</a></li>
+        </ul>
+        <img id ="icon" src="./Images/UNSA-Icon.png" alt="img unsa" width="140px"  >
+    </nav>
+    <div class="flex-container">
+        <img src="./Images/UNSA-Icon.png" alt="img unsa" width="600px">
+        <div class="form-container">
+            <form action="./cgi-bin/BusquedaImages.pl" method="GET">
+                <input type="text" name = "search" autocomplete="off" required>
+        
+                <input type="submit" value = "Búsqueda en Google">  
+            </form>
+            <p id = "fbottom"> powered by Google Images</p>
+        </div>  
+    </div>
+</body>
+</html>
