@@ -104,7 +104,7 @@ sub Search(){
     }
 }
 
-=open
+=OP
 open(TEXT, "../DB/Programas\ de\ Universidades.csv") or die "no existe el archivo ._.";
 open(REWRITE,  "> ../DB/Programas\ de\ Universidades2.csv") or die "no existe el archivo ._.";
 while(my $l =  <TEXT>){

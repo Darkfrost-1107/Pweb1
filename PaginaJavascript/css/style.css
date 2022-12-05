@@ -1,0 +1,26 @@
+div.example{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #ddd;
+}
+
+input{
+    border-radius: 10px;
+    border: 3px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+input#cOp{
+    font-size: 15px; 
+    width: 150px;
+    height: 30px;
+}
+
+input#cRes{
+    font-size: 10px;
+    width: 150px;
+    height: 20px;
+}

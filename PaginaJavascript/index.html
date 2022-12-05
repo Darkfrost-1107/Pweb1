@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Pruebitas </title>
+    <link rel = "Stylesheet" href = "./css/style.css">
+    <style>
+        p {
+            font-family: 'helvetica neue', helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid rgba(0,0,200,0.6);
+            background: rgba(0,0,200,0.3);
+            color: rgba(0,0,200,0.6);
+            box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+            border-radius: 10px;
+            padding: 3px 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+        
+    <script src = "./scripts/Actions.js">
+        
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    
+    <div class = "example">
+        <h2>My First JavaScript</h2>
+
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.
+        </button>
+
+        <p id="demo"></p>
+    </div>
+    <p id="listener"> Gabo</p>
+
+    <div class = "example">
+        <h2>Calculator with JavaScript</h2>
+        <form>
+            <table>
+                <tr>
+                    <td colspan = 4><input id = "cOp" type="text" name= "operation" value = "" placeholder="Operation" ></td>
+                </tr>
+                <tr>
+                    <td colspan = 4><input id = "cRes" type="text" name= "result" value = "" placeholder="Result"></td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value = ''"
+                        value = "C">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value = Chomp(operation.value)"
+                        value = "<-">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "%">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "/">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "7">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick=    "operation.value += value"
+                        value = "8">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "9">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "*">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "4">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick=    "operation.value += value"
+                        value = "5">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "6">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "-">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "1">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick=    "operation.value += value"
+                        value = "2">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "3">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = "+">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "result.value = '';
+                        operation.value = '';"
+                        value = ":)">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick=    "operation.value += value"
+                        value = "0">
+                    </td>
+                    
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "operation.value += value"
+                        value = ".">
+                    </td>
+                    <td> 
+                        <input class= "cbut" type="button"
+                        onclick =    "result.value = Solve(null,null,null,null,operation.value)"
+                        value = "=">
+                    </td>
+                    
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class = "example">
+        <p>Player 1: Gabo :P</p>
+    </div>
+    
+    <script>
+        const para = document.querySelector('#listener');
+        para.addEventListener('click', updateName);
+        function updateName() {
+        const name = prompt('Ingrese un nuevo nombre');
+        para.textContent = `Player 1: ${name}`;
+        }
+    </script>
+
+    <>
+</body>
