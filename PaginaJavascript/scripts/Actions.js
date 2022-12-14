@@ -1,6 +1,5 @@
-
 function Solve(w1,x1,y1,z1,com){
-    //alert(w1 +" "+ x1 +" " + y1 + " " + z1 +" " + com);
+
     let a = null, b = null;
     if(com != null){
         if(com.length != 0 ){
@@ -13,11 +12,11 @@ function Solve(w1,x1,y1,z1,com){
         return Solve(x1,y1,z1,a,b);
     }
 
-    if(x1 == null){
+    if(x1 == null || x1 == "."){
         return w1;
     }
 
-    if(!isNaN(x1)){
+    if(!isNaN(x1) || x1 == "."){
         return Solve(Concat(w1,x1),y1,z1,a,b);
     }
 
@@ -64,7 +63,6 @@ function Operate(a, sign, b){
             return +a*10 + sign;
     }
 }
-
 
 function Chomp(x){
     return x.substring(0, x.length - 1);

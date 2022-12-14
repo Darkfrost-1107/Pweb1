@@ -1,0 +1,29 @@
+div.DataInput{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #ddd;
+}
+
+input{
+    display: block;
+}
+
+div.resultContainer{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: #aaa;
+    display: block;
+}
+
+div.resultItem{
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: #ccc;
+}
